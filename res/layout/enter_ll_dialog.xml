@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:paddingLeft="8.0dp"
+  android:paddingRight="8.0dp">
+
+	<LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical">
+      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:hint="@string/latitude"></TextView>
+      <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" 
+                android:id="@+id/enter_latitude"
+                android:paddingTop="4.0dp"></EditText>
+	</LinearLayout>
+	<LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical"
+	  android:paddingTop="6.0dp">
+	  <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+	            android:hint="@string/longitude"></TextView>
+	  <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	            android:id="@+id/enter_longitude"
+	            android:paddingTop="4.0dp"></EditText>
+	</LinearLayout>
+
+	<RadioGroup android:layout_width="fill_parent" android:id="@+id/coords_format_group"
+		android:layout_height="wrap_content" android:orientation="vertical">
+
+		<RadioButton android:id="@+id/coords_format_minutes"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:text="DDD:MM.MMMMM" />
+
+        <RadioButton android:id="@+id/coords_format_degrees"
+            android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="DDD.DDDDD" />
+
+	</RadioGroup>	
+	<Button android:id="@+id/get_current" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/current_position"/>
+</LinearLayout>

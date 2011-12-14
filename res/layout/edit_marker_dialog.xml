@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical"
+  android:paddingLeft="8.0dp"
+  android:paddingRight="8.0dp">
+
+	<LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical">
+      <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:hint="@string/marker_name"></TextView>
+      <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" 
+                android:hint="@string/short_name" 
+                android:id="@+id/marker_edit_name"
+                android:paddingTop="4.0dp"></EditText>
+	</LinearLayout>
+	<LinearLayout
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="vertical"
+	  android:paddingTop="6.0dp">
+	  <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+	            android:hint="@string/marker_description"></TextView>
+	  <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" 
+	            android:hint="@string/brief_description"
+	            android:id="@+id/marker_edit_snippet"
+	            android:paddingTop="4.0dp"></EditText>
+	</LinearLayout>
+</LinearLayout>

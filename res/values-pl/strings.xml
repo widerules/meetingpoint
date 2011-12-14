@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="set_marker">Ustaw Znacznik</string>
+    <string name="marker_name">Nazwa znacznika</string>
+    <string name="short_name">Skrócona nazwa</string>
+    <string name="marker_description">opis</string>
+    <string name="brief_description">krótki opis</string>
+    <string name="app_name">Meeting Point</string>
+    <string name="share">Udostępnij</string>
+    <string name="save">Zapisz</string>
+    <string name="edit">Edytuj</string>
+    <string name="delete">Usuń</string>
+    <string name="openExt">Otwórz zewnętrzną aplikacją</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Anuluj</string>
+    <string name="setup">Ustawienia</string>
+    <string name="info">Info</string>
+    <string name="save_all">Nagraj wszystkie</string>
+    <string name="share_all">Udostępnij wszystkie</string>
+    <string name="search_hint">Szukaj adresu</string>
+    <string name="searchin">Szukam...</string>
+    <string name="search_result_title">Chodziło Ci o</string>
+    <string name="search_result_notfound">Nie znalazłem!</string>
+    <string name="setup_title">MeetingPoint Konfiguracja</string>
+    <string name="latlonformat_share">Format udostępniania</string>
+    <string name="latlonformat_save">Format pozycji dla zapisu</string>
+    <string name="include_link_share">Co udostępniać</string>
+    <string name="include_link_save">Co zapisywać</string>
+    <string name="share_with_title">Udostępnij znacznik przez</string>
+    <string name="include_link_key0">tylko pozycja</string>
+    <string name="include_link_key1">tylko link</string>
+    <string name="include_link_key2">pozycja i link</string>
+
+    <string name="coords_button">Skocz</string>
+    <string name="enter_coords">Wprowadź współrzędne</string>
+    <string name="latitude">szerokość</string>
+    <string name="longitude">długość</string>
+    <string name="current_position">Pobierz aktualną pozycję</string>
+    
+    <string name="general_info">MeetingPoint to proste narzędzie do szybkiego zapisywania i wysyłania pozycji zaznaczonych na mapie.\n - Naciśnij "Usaw Znacznik" aby wbić szpilkę w miejse na środku mapy, oznaczone krzyżykem.\n - Kliknij na znaczniku aby edytować/wysyłać.\n - Ustaw tyle znaczników ile potrzebujesz.\n - Strzałki na mapie umożliwiają skakanie pomiędzy znacznikami.\n - Możesz zapisać/wysłać wszystkie znaczniki jednocześnie, używając menu opcji.\n
+                                Pozycja może być zapisywana jako długość i szerokość w formacie pozwalającym na łatwe wczytanie do dowolnego GPS\'a lub nawigacji, albo być wysyłana jako link do Google Maps - tę opcję wybierz w Ustawieniach.\n Aby zapisywać znaczniki musisz mieć zainstalowane Catch Notes. 
+                                 </string>
+    
+</resources>

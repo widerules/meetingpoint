@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:gravity="top">
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbox" android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:paddingBottom="0.0sp"
+        android:layout_marginBottom="0.0sp">
+        
+        <pl.skifo.meetingpoint.ToggleImageButton android:id="@+id/sat_view" android:layout_height="fill_parent" android:layout_width="wrap_content"
+        android:layout_marginBottom="0.0sp"
+        android:layout_marginTop="0.0sp"
+        android:layout_marginLeft="0.0sp"
+        android:layout_marginRight="0.0sp"
+        android:minHeight="48.0dp"
+        android:minWidth="48.0dp"
+        android:background="@drawable/sat_selector"></pl.skifo.meetingpoint.ToggleImageButton>
+        <ImageButton android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/my_pos"
+        android:layout_marginBottom="0.0sp" android:background="@drawable/bkg" android:minHeight="48.0dp" android:minWidth="48.0dp"
+        android:src="@drawable/mypos_selector"
+        ></ImageButton>
+
+        <Button android:text="@string/coords_button" android:id="@+id/ll_button" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginBottom="0.0sp"
+        android:background="@drawable/bkg_selector" android:minHeight="48.0dp">
+        </Button>
+        
+        <Button android:text="@string/set_marker" android:id="@+id/getpos_button" android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="0.0sp"
+        android:background="@drawable/bkg_selector" android:minHeight="48.0dp">
+        </Button>
+
+        
+    </LinearLayout>
+
+    <com.google.android.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_below="@id/toolbox"
+        android:apiKey=""
+    />
+</RelativeLayout>
