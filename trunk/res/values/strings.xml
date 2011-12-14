@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="set_marker">Set Marker</string>
+    <string name="marker_name">Marker name</string>
+    <string name="short_name">short name</string>
+    <string name="marker_description">marker description</string>
+    <string name="brief_description">brief description</string>
+    <string name="app_name">Meeting Point</string>
+    <string name="share">Share</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="openExt">Open with External App </string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="setup">Setup</string>
+    <string name="info">Info</string>
+    <string name="save_all">Save all</string>
+    <string name="share_all">Share all</string>
+    <string name="search_hint">Search for address</string>
+    <string name="searchin">Searching...</string>
+    <string name="search_result_title">Do you mean</string>
+    <string name="search_result_notfound">Sorry, not found!</string>
+    <string name="setup_title">MeetingPoint Setup</string>
+    <string name="latlonformat_share">Share position format</string>
+    <string name="latlonformat_save">Save position format</string>
+    <string name="include_link_share">Share content</string>
+    <string name="include_link_save">Save content</string>
+    <string name="share_with_title">Share your marker with</string>
+    <string name="include_link_key0">only position</string>
+    <string name="include_link_key1">only link</string>
+    <string name="include_link_key2">position and link</string>
+    
+    <string name="coords_button">Go to</string>
+    <string name="enter_coords">Enter coordinates</string>
+    <string name="latitude">latitude</string>
+    <string name="longitude">longitude</string>
+    <string name="current_position">Grab current position</string>
+    
+    <string name="general_info">MeetingPoint is a simple utility to mark one or more spots and share or save them in quick and easy way.\n - press "Set Marker" to place marker at the X spot\n - tap on marker to Edit/Share\n - place as many markers as you need\n - use on-screen arrows to jump between markers\n - use menu options to save/share all markers\n
+                                Position can be send as latitude/longitude and easily imported to any kind of GPS or navigation device.\n
+                                If you prefer to save/share Google Maps link, you can change it in Preferences.\n To save notes you have to have Catch Notes installed. 
+                                 </string>
+    
+</resources>

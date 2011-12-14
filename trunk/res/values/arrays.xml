@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="latlon_format">
+        <item>DDD.DDDDD</item>
+        <item>DDD:MM.MMMMM</item>
+        <item>DDD:MM:SS.SSSSS</item>
+    </string-array>
+
+	<string-array name="latlon_values">
+		<item>DDD.DDDDD</item>
+		<item>DDD:MM.MMMMM</item>
+		<item>DDD:MM:SS.SSSSS</item>
+	</string-array>
+
+    <string-array name="include_link">
+        <item>@string/include_link_key0</item>
+        <item>@string/include_link_key1</item>
+        <item>@string/include_link_key2</item>
+    </string-array>
+
+    <string-array name="include_link_values">
+        <item>only_ll</item>
+        <item>only_link</item>
+        <item>ll_and_link</item>
+    </string-array>
+
+
+</resources>

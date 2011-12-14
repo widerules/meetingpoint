@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<ListPreference 
+	   android:entries="@array/latlon_format"
+	   android:entryValues="@array/latlon_values"
+	   android:persistent="true"
+	   android:title="@string/latlonformat_save"
+	   android:key="latlon_format_save"
+	   android:defaultValue="DDD:MM.MMMMM"
+	>
+	</ListPreference>
+    <ListPreference 
+       android:entries="@array/include_link"
+       android:entryValues="@array/include_link_values"
+       android:persistent="true"
+       android:title="@string/include_link_save"
+       android:key="include_link_save"
+       android:defaultValue="only_ll"
+    >
+    </ListPreference>
+
+	<ListPreference 
+	   android:entries="@array/latlon_format"
+	   android:entryValues="@array/latlon_values"
+	   android:persistent="true"
+	   android:title="@string/latlonformat_share"
+	   android:key="latlon_format_share"
+	   android:defaultValue="DDD.DDDDD"
+	>
+	</ListPreference>
+    <ListPreference 
+       android:entries="@array/include_link"
+       android:entryValues="@array/include_link_values"
+       android:persistent="true"
+       android:title="@string/include_link_share"
+       android:key="include_link_share"
+       android:defaultValue="ll_and_link"
+    >
+    </ListPreference>
+
+</PreferenceScreen>
