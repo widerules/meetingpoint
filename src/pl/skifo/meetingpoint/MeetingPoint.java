@@ -738,6 +738,7 @@ public class MeetingPoint extends MapActivity implements OnClickListener, Action
                     case R.string.delete: {
                         markersOverlay.removeMarker(currentMarkerId);
                         mapView.invalidate();
+                        break;
                     }
                     case R.string.openExt: {
                         runExternal();
@@ -1093,7 +1094,7 @@ public class MeetingPoint extends MapActivity implements OnClickListener, Action
         
         if (action == ACTION_NEXT) {
             currentMarkerId++;
-            if (currentMarkerId == s)
+            if (currentMarkerId >= s)
                 currentMarkerId = 0;
             if (currentMarkerId < 0) // just for case
                 currentMarkerId = 0;
