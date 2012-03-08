@@ -174,41 +174,41 @@ public class CrosshairsOverlay extends Overlay {
 
         //int index = e.getActionIndex();
         int index = (rawAction & MotionEvent.ACTION_POINTER_INDEX_MASK) >> MotionEvent.ACTION_POINTER_INDEX_SHIFT;
-            int pointerId = e.getPointerId(index);
-            if (action != MotionEvent.ACTION_MOVE) {
-                if (action == MotionEvent.ACTION_DOWN || action == MotionEvent.ACTION_POINTER_DOWN) {
+        int ptrId = e.getPointerId(index);
+        if (action != MotionEvent.ACTION_MOVE) {
+            if (action == MotionEvent.ACTION_DOWN || action == MotionEvent.ACTION_POINTER_DOWN) {
 
-                    //Log.d("MeetingPoint", "onTouchEvent = "+e);
+                //Log.d("MeetingPoint", "onTouchEvent = "+e);
 
-                    float x = e.getX(pointerId)/w;
-                    float y = e.getY(pointerId)/h;
+                float x = e.getX(index)/w;
+                float y = e.getY(index)/h;
 
-                    if (prev.checkRangeAndSetPointer(pointerId, x, y)) {
-                        //Log.d("MeetingPoint", "PREV");
-                        if (actionListener != null)
-                            actionListener.doAction(MeetingPoint.ACTION_PREV);
-                        ret = true;
-                    }
-                    else if (next.checkRangeAndSetPointer(pointerId, x, y)) {
-                        //Log.d("MeetingPoint", "NEXT");
-                        if (actionListener != null)
-                            actionListener.doAction(MeetingPoint.ACTION_NEXT);
-                        ret = true;
-                    }
-                    else if (search.checkRangeAndSetPointer(pointerId, x, y)) {
-                        //Log.d("MeetingPoint", "SEARCH");
-                        if (actionListener != null)
-                            actionListener.doAction(MeetingPoint.ACTION_SEARCH);
-                        ret = true;
-                    }
+                if (prev.checkRangeAndSetPointer(ptrId, x, y)) {
+                    //Log.d("MeetingPoint", "PREV");
+                    if (actionListener != null)
+                        actionListener.doAction(MeetingPoint.ACTION_PREV);
+                    ret = true;
+                }
+                else if (next.checkRangeAndSetPointer(ptrId, x, y)) {
+                    //Log.d("MeetingPoint", "NEXT");
+                    if (actionListener != null)
+                        actionListener.doAction(MeetingPoint.ACTION_NEXT);
+                    ret = true;
+                }
+                else if (search.checkRangeAndSetPointer(ptrId, x, y)) {
+                    //Log.d("MeetingPoint", "SEARCH");
+                    if (actionListener != null)
+                        actionListener.doAction(MeetingPoint.ACTION_SEARCH);
+                    ret = true;
                 }
             }
-            else {
-                float x = e.getX(pointerId)/w;
-                float y = e.getY(pointerId)/h;
-                ret = prev.checkRangeAndSetPointer(pointerId, x, y) || next.checkRangeAndSetPointer(pointerId, x, y); 
-            }
-            return ret;        
+        }
+        else {
+            float x = e.getX(index)/w;
+            float y = e.getY(index)/h;
+            ret = prev.checkRangeAndSetPointer(ptrId, x, y) || next.checkRangeAndSetPointer(ptrId, x, y); 
+        }
+        return ret;        
     }
-    
+
 }
